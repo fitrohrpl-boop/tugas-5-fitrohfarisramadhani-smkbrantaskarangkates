@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitroh Faris | Kalkulator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    if (localStorage.getItem("tema") === "gelap") {
+      document.documentElement.classList.add("gelap");
+    }
+  </script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <h1>Fitroh Faris</h1>
+      <nav class="menu-laptop">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="kalkulator.html">Kalkulator</a></li>
+        </ul>
+      </nav>
+      <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
+      <details class="menu-ponsel">
+        <summary>Menu</summary>
+        <nav>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="kalkulator.html">Kalkulator</a></li>
+          </ul>
+        </nav>
+      </details>
+      <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container kalkulator-wrap">
+      <section class="kartu kalkulator-kartu">
+        <h2 class="kalkulator-judul">Kalkulator Nilai</h2>
+        <p class="kalkulator-desk">Masukkan nilai Tugas, UTS, dan UAS untuk menghitung rata-rata dan predikat.</p>
+
+        <div class="kolom">
+          <label for="tugas">Nilai Tugas</label>
+          <input type="number" id="tugas" placeholder="0 - 100" min="0" max="100">
+        </div>
+        <div class="kolom">
+          <label for="uts">Nilai UTS</label>
+          <input type="number" id="uts" placeholder="0 - 100" min="0" max="100">
+        </div>
+        <div class="kolom">
+          <label for="uas">Nilai UAS</label>
+          <input type="number" id="uas" placeholder="0 - 100" min="0" max="100">
+        </div>
+
+        <button id="hitung" type="button">Hitung</button>
+
+        <p id="hasil" class="hasil"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Kontak: <a href="mailto:fitrohfaris2@gmail.com">fitrohfaris2@gmail.com</a> |
+      <a href="https://github.com/fitrohrpl-boop" target="_blank">GitHub</a> |
+      <a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
+    <p>&copy; 2026 Fitroh faris ramadhani. Dibuat di Kelas Industri UBIG.</p>
+  </footer>
+
+  <script src="script/script.js" defer></script>
+  <script src="script/kalkulator.js" defer></script>
+</body>
+</html>

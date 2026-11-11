@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <style>
+
+    </style>
+    <header>
+     <div class="container navbar">
+        <h1>Fitroh Faris</h1>
+        <nav class="menu-laptop">
+            <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
+        <details class="menu-ponsel">
+            <summary>Menu</summary>
+            <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="proyek.html">Proyek</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            </nav>f
+        </details>
+        </div>
+    </header>
+    <main>
+        <h1>Kalkulator Nilai</h1>
+        <input type="number" id="tugas" placeholder="Nilai tugas">
+        <input type="number" id="uts" placeholder="Nilai UTS">
+        <input type="number" id="uas" placeholder="Nilai UAS">
+        <button id="hitung">Hitung</button>
+        <p id="hasil"></p>
+    </main>
+    <script src="script/script.js" defer></script>
+    <script src="script/kalkulator.js" defer></script>
+</body>
+</html>
