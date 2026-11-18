@@ -14,6 +14,84 @@
     }
   </script>
   <script src="js/main.js" defer></script>
+  <style>
+    .kalkulator-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .kalkulator-kartu {
+      width: 100%;
+      max-width: 26rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .kalkulator-judul {
+      font-size: 1.75rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .kalkulator-desk {
+      color: var(--warna-teks);
+      margin-bottom: 1.5rem;
+    }
+
+    .kolom {
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    .kolom label {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: var(--warna-judul);
+    }
+
+    .kolom input {
+      max-width: none;
+      width: 100%;
+      margin-top: 0;
+      padding: 0.75rem;
+      font-size: 1.1rem;
+    }
+
+    #hitung {
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 0.9rem;
+      font-size: 1.1rem;
+      background-color: var(--warna-aksen);
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    #hitung:hover {
+      background-color: var(--warna-aksen);
+      filter: brightness(0.92);
+    }
+
+    #hitung:active {
+      transform: scale(0.98);
+    }
+
+    .hasil {
+      margin-top: 1.25rem;
+      margin-bottom: 0;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--warna-garis);
+      background-color: var(--warna-latar);
+      font-family: "Poppins", Arial, sans-serif;
+      font-weight: 600;
+      color: var(--warna-judul);
+      text-align: center;
+    }
+
+    .hasil:empty {
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <header>
