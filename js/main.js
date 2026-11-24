@@ -203,3 +203,14 @@ if (daftarProyek) {
   pasangFilter("#filter-css", "CSS");
   pasangFilter("#filter-javascript", "JavaScript");
 }
+// 6. Tombol kosongkan pesan (halaman Kontak)
+const tombolKosongkan = document.getElementById("tombol-kosongkan");
+const kotakPesan = document.getElementById("pesan");
+
+if (tombolKosongkan && kotakPesan) {
+  tombolKosongkan.addEventListener("click", function () {
+    kotakPesan.value = "";
+    kotakPesan.focus();
+    kotakPesan.dispatchEvent(new Event("input")); // memperbarui penghitung karakter, jika ada
+  });
+}
